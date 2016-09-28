@@ -1,9 +1,8 @@
-/*************************************
-* Copyright 2016 elementary LLC.     *
-* This file is part of elementary.io *
-*************************************/
+/*************************************************************
+* This files is based on elementary.io official website.     *
+**************************************************************/
 
-@font-face {
+/*@font-face {
     font-family: 'Raleway';
     src:
         url('../fonts/Raleway-thin.woff2') format('woff2'),
@@ -18,7 +17,7 @@
         url('../fonts/Raleway-thin-italic.woff2') format('woff2'),
         url('../fonts/Raleway-thin-italic.woff')  format('woff'),
         url('../fonts/Raleway-thin-italic.ttf')   format('truetype');
-}
+}*/
 
 html,
 body {
