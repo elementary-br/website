@@ -1,6 +1,7 @@
 nav{
   background-color: #009c34;
-} 
+}
+
 .nav-content {
   margin: 0 auto;
   max-width: 1280px;
@@ -9,6 +10,11 @@ nav{
 
 .container {
   width: 100%;
+}
+
+.container.-narrow {
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 @media(min-width: 1280px) {
@@ -38,6 +44,10 @@ nav{
 .hero-display > .dimmer > h1 {
   color: #fff;
   text-shadow: 2px 2px 6px rgba(66, 66, 66, 1);
+}
+
+.main-page > section > .container > p {
+  margin-left: 55px;
 }
 
 .main-community {
