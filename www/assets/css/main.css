@@ -326,14 +326,13 @@ body {
 }
 
 footer {
-    color: inherit;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 12px;
-    justify-content: center;
-    padding-top: 24px;
-    text-align: center;
-    align-items: center;
+    padding: 6px 0 6px 0;
+    background: #fcfffd;
+    line-height: 48px;
+    min-height: 48px;
+    min-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 footer > * {
@@ -355,16 +354,15 @@ footer > div > * {
     display: inline-block;
 }
 
-footer > div > p,
-footer > div > div > a,
-footer > ul {
-    opacity: 0.8;
-    text-align: center;
-    list-style: none;
+footer > div {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-footer .popover {
-    margin: 12px;
+footer > div > p,
+footer > div > div > a,
+footer > div > ul {
+    list-style: none;
 }
 
 @media (min-width: 375px) {
@@ -378,30 +376,53 @@ footer .popover {
     }
 }
 
-footer > ul li {
+footer > div > ul:first-child {
+    flex: 0 0 auto;
+}
+
+.social-icon-list li + li:before {
+    content: none;
+}
+
+footer > div > ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer > div > ul li {
     display: inline-block;
 }
 
-footer ul li + li,
-footer p a {
+footer ul li + li {
     margin-left: 12px;
 }
 
-footer a {
-    color: inherit;
+footer > div > ul li + li:before {
+    margin-right: 12px;
+    content: "•";
 }
 
 footer i.fa {
     font-size: 16px;
 }
 
-footer a:focus i.fa {
-    color: #08c;
-    text-shadow: 0 1px 6px #08c;
+.fa-facebook-color {
+    color: #3b5998;
 }
 
-footer ul li a:focus {
-    outline: none;
+.fa-twitter-color {
+    color: #1da1f2;
+}
+
+.fa-google-plus-color {
+    color: #dd4b39;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*********
