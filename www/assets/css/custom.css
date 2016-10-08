@@ -59,6 +59,7 @@ nav{
 
 .main-page > section > .container > .subheading {
   font: 18px "Open Sans", "Droid Sans", Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .main-page > section > .container > .subheading > .fa {
