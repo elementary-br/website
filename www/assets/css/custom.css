@@ -94,6 +94,10 @@ nav{
   padding-bottom: 20px;
 }
 
+.main-news hr {
+  margin-left: 60px;
+}
+
 .main-community .suggested-action,
 .main-news .suggested-action {
   margin-left: 0px;
