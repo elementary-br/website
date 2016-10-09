@@ -60,6 +60,7 @@ nav{
 
 .main-page > section > .container > .subheading {
   font: 18px "Open Sans", "Droid Sans", Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .main-page > section > .container > .subheading > .fa {
@@ -68,6 +69,7 @@ nav{
 }
 
 .main-page > section > .container > .posttitle {
+  font-size: 24px;
   margin-bottom: 3px;
 }
 
@@ -92,6 +94,10 @@ nav{
   background-color: #f7faf8;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.main-news hr {
+  margin-left: 60px;
 }
 
 .main-community .suggested-action,
