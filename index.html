@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/custom.css">
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
   </head>
   <body>
 
@@ -178,5 +180,42 @@
       </div>
     </footer>
 
+    <script type="text/javascript">
+      var url = 'https://medium.com/feed/elementarybr'
+
+      feednami.loadGoogleFormat(url,function(result){
+
+        if (result.error){
+          console.log(result.error)
+        }
+        else {
+          var entries = result.feed.entries
+
+          var titleElement = $('.posttitle').eq(0);
+          var excerptElement = $('.posttitle').eq(0).next();
+          var target = $('.main-news h3');
+
+          for (var i = 0; i < 2; i++) {
+            var entry = entries[i]
+
+            var title = titleElement.clone()
+            var excerpt = excerptElement.clone()
+
+            title.children().attr({
+              href: entry.link,
+              title: entry.title,
+              target: '_blank'
+            }).text(entry.title);
+
+            excerpt.text(entry.contentSnippet);
+
+            target.after(title);
+            title.after(excerpt);
+            excerpt.after('<hr />');
+
+          }
+        }
+      })
+    </script>
   </body>
 </html>
