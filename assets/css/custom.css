@@ -9,6 +9,10 @@ nav{
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+.nav-content .logomark path {
+  fill: #fff;
+}
+
 .container {
   width: 100%;
 }
