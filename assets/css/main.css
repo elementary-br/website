@@ -250,6 +250,10 @@ footer i.fa {
     color: #171515;
 }
 
+.fa-telegram-color {
+    color: #0088cc;
+}
+
 .footer-content {
     margin: 0 auto;
     max-width: 1280px;
