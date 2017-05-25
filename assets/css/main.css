@@ -242,6 +242,14 @@ footer i.fa {
     color: #dd4b39;
 }
 
+.fa-medium-color {
+    color: #00ab6c;
+}
+
+.fa-github-color {
+    color: #171515;
+}
+
 .footer-content {
     margin: 0 auto;
     max-width: 1280px;
