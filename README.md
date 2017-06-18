@@ -1,7 +1,7 @@
-elementary Brasil Website
+elementary OS Brasil Website
 =========================
 
-The official repository for the elementary Brasil Community Website. Based in the work by [Harvey Cabaguio](http://harveycabaguio.me/).
+The official repository for the elementary OS Brasil Community Website. Based in the work by [Harvey Cabaguio](http://harveycabaguio.me/).
 
 ![mockup preview](https://elementary-br.github.io/website/mockup/elementary%20Brasil%20-%20Home.svg)
 
