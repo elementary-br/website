@@ -13,7 +13,7 @@ RetornaPostsMediumHtml = function (numPosts, callback) {
     })
         .done(function (res) {
             for (var i = 0; i < numPosts; i++) {
-                htmlCode += '<h4 class="posttitle"><a href="https://medium.com/elementarybr/' + res.payload.posts[i].uniqueSlug + '" title="' + res.payload.posts[i].title + '">' + res.payload.posts[i].title + '</a></h4>';
+                htmlCode += '<h4 class="posttitle"><a href="https://medium.com/elementarybr/' + res.payload.posts[i].uniqueSlug + '" title="' + res.payload.posts[i].title + '" target="_blank">' + res.payload.posts[i].title + '</a></h4>';
                 htmlCode += '<p class="postexcerpt">' + res.payload.posts[i].virtuals.subtitle + '</p>';
 
                 if (i < numPosts - 1) {
